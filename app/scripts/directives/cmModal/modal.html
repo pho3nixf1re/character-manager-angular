@@ -1,0 +1,13 @@
+<div class="modal">
+  <label ng-attr-for="modal-{{ id }}">
+    <div class="button js-modal-button">{{ buttonText }}</div>
+  </label>
+  <input class="modal-state" ng-model="open" ng-attr-id="modal-{{ id }}" type="checkbox" />
+  <div class="modal-window">
+    <div class="modal-inner" ng-class="{ smaller: small }">
+      <label class="modal-close" ng-attr-for="modal-{{ id }}"></label>
+      <h1>{{ title }}</h1>
+      <div class="modal-content" ng-transclude></div>
+    </div>
+  </div>
+</div>

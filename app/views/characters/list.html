@@ -1,0 +1,9 @@
+<cm-create-character on-create="newCharacter"></cm-create-character>
+
+<div class="charactersList">
+  <cm-character-card
+    ng-repeat="(id, character) in characters"
+    character-id="id"
+    character="character",
+    on-remove="deleteCharacter" />
+</div>

@@ -1,0 +1,16 @@
+@import 'base/grid-settings';
+
+// bower:scss
+@import "bourbon/dist/_bourbon.scss";
+@import "neat/app/assets/stylesheets/_neat.scss";
+// endbower
+
+@import 'base/base';
+
+.browsehappy {
+  @extend %flash-alert
+}
+
+.card--delete-card {
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+<cm-modal
+  title="New Character"
+  button-text="Create Character"
+  size="small"
+  open="modalOpen">
+  <form name="characterForm" ng-submit="createHandler(characterForm)">
+    <label for="name">Name:</label>
+    <input type="text" ng-model="character.name" placeholder="Elmeen" ng-required="true" />
+    <label for="tagLine">Tag Line:</label>
+    <input type="text" ng-model="character.tagLine" placeholder="the Hardy">
+    <div class="form-buttons">
+      <a ng-click="cancelHandler(characterForm)">cancel</a>
+      <button type="submit">Create</button>
+    </div>
+  </form>
+</cm-modal>
