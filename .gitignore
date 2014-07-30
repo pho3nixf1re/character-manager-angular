@@ -3,6 +3,7 @@ dist
 .tmp
 .sass-cache
 bower_components
+.bundle
 
 # Created by http://www.gitignore.io
 
