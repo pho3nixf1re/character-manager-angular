@@ -41,3 +41,7 @@ cm-modal {
 .charactersList--characters {
   @include fill-parent;
 }
+
+.characterEdit {
+  @include outer-container;
+}
