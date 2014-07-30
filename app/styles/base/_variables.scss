@@ -25,6 +25,7 @@ $base-background-color: white;
 
 // Font Colors
 $base-font-color: $dark-gray;
+$light-font-color: lighten($base-font-color, 20%);
 $base-accent-color: $blue;
 
 // Link Colors

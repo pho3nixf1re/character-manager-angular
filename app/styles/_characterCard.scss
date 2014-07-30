@@ -1,0 +1,34 @@
+
+.characterCard--header {
+  @include clearfix;
+
+  h1 {
+    @include span-columns(2 of 4);
+    font-size: 1em;
+  }
+}
+
+.characterCard--actions {
+  @include span-columns(2 of 4);
+}
+
+.characterCard--name {
+  display: block;
+}
+
+.characterCard--tagLine {
+  font-size: .9em;
+  color: $light-font-color;
+}
+
+%characterCard--actions {
+  cursor: pointer;
+}
+
+.characterCard--edit {
+  @extend %characterCard--actions;
+}
+
+.characterCard--delete {
+  @extend %characterCard--actions;
+}

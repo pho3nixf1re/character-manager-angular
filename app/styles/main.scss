@@ -7,10 +7,37 @@
 
 @import 'base/base';
 
+@import 'characterCard';
+
 .browsehappy {
-  @extend %flash-alert
+  @extend %flash-alert;
 }
 
-.card--delete-card {
-  cursor: pointer;
+cm-menu {
+  @include outer-container;
+  display: block;
+}
+
+cm-modal {
+  display: inline-block;
+}
+
+.charactersList {
+  @include outer-container;
+
+  cm-character-card {
+    @include span-columns(3);
+    @include omega(4n);
+    margin-bottom: 2em;
+  }
+}
+
+.charactersList--actions {
+  @include span-columns(6);
+  @include shift(6);
+  text-align: right;
+  margin-bottom: 2em;
+}
+.charactersList--characters {
+  @include fill-parent;
 }

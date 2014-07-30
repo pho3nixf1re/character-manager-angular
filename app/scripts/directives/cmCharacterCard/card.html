@@ -1,7 +1,16 @@
-<div class="character">
-  <span class="name">{{ character.name }}</span>
-  <span class="tagLine">{{ character.tagLine }}</span>
-  <a ng-click="remove(characterId)" class="card--delete-card">
-    <span class="fa fa-times"></span>
-  </a>
-</div>
+<section class="characterCard">
+  <header class="characterCard--header">
+    <h1>
+      <span class="characterCard--name">{{ character.name }}</span>
+      <span class="characterCard--tagLine">{{ character.tagLine }}</span>
+    </h1>
+    <div class="characterCard--actions">
+      <a href="/character/{{ characterId }}/edit" class="characterCard--edit">
+        <span class="fa fa-edit"></span>
+      </a>
+      <a ng-click="remove(characterId)" class="characterCard--delete">
+        <span class="fa fa-times"></span>
+      </a>
+    </div>
+  </header>
+</section>
