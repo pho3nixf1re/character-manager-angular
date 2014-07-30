@@ -1,10 +1,10 @@
-@import 'base/grid-settings';
 
 // bower:scss
 @import "bourbon/dist/_bourbon.scss";
-@import "neat/app/assets/stylesheets/_neat.scss";
 // endbower
 
+@import 'base/grid-settings';
+@import "neat/app/assets/stylesheets/_neat.scss";
 @import 'base/base';
 
 @import 'characterCard';
