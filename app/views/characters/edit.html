@@ -1,12 +1,17 @@
-<div class="characterEdit">
-  <form name="characterEditForm" ng-submit="save()">
-    <label for="name">Name:</label>
-    <input type="text" ng-model="character.name" ng-required="true" />
-    <label for="tagLine">Tag Line:</label>
-    <input type="text" ng-model="character.tagLine">
+<form name="characterEditForm" ng-submit="save()">
+  <section class="characterEdit">
+    <div class="characterEdit--avatar">
+      <p>avatar goes here</p>
+    </div>
+    <div class="characterEdit--title">
+      <label for="name">Name:</label>
+      <input type="text" ng-model="character.name" ng-required="true" />
+      <label for="tagLine">Tag Line:</label>
+      <input type="text" ng-model="character.tagLine" />
+    </div>
     <div class="form-buttons">
-      <a ng-click="cancel()">cancel</a>
+      <a href="" ng-click="cancel()">cancel</a>
       <button type="submit">Save</button>
     </div>
-  </form>
-</div>
+  </section>
+</form>

@@ -1,15 +1,16 @@
 
 .characterCard--header {
-  @include clearfix;
+  @include fill-parent;
 
   h1 {
-    @include span-columns(2 of 4);
+    @include span-columns(3 of 4);
     font-size: 1em;
   }
 }
 
 .characterCard--actions {
-  @include span-columns(2 of 4);
+  @include span-columns(1 of 4);
+  text-align: right;
 }
 
 .characterCard--name {

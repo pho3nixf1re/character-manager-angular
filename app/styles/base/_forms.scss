@@ -78,6 +78,6 @@ select {
 }
 
 .form-buttons {
-  width: 100%;
+  @include fill-parent;
   text-align: right;
 }

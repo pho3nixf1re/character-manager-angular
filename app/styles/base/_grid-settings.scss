@@ -1,7 +1,13 @@
 @import 'neat/app/assets/stylesheets/_neat-helpers.scss';
 
+// Neat Debugging
+// $visual-grid: true;
+// $visual-grid-opacity: .4;
+// $visual-grid-index: front;
+// $visual-grid-color: #eee;
+
 // Neat Overrides
-$column: 90px;
+$column: 60px;
 $gutter: 30px;
 $grid-columns: 12;
 $max-width: em(1088);
